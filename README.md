@@ -15,6 +15,8 @@
 
 ## Overview
 
+[Live Link](https://jdegand.github.io/futurama-fan-wiki)
+
 ![](futurama-fan-wiki.png)
 
 ![](futurama-character-page.png)
