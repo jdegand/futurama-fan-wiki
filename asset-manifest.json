@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/futurama-fan-wiki/static/css/main.35fa71f6.css",
-    "main.js": "/futurama-fan-wiki/static/js/main.7ccf2083.js",
+    "main.css": "/futurama-fan-wiki/static/css/main.eee07491.css",
+    "main.js": "/futurama-fan-wiki/static/js/main.1bcc127b.js",
     "static/js/787.cc59b14a.chunk.js": "/futurama-fan-wiki/static/js/787.cc59b14a.chunk.js",
     "index.html": "/futurama-fan-wiki/index.html",
-    "main.35fa71f6.css.map": "/futurama-fan-wiki/static/css/main.35fa71f6.css.map",
-    "main.7ccf2083.js.map": "/futurama-fan-wiki/static/js/main.7ccf2083.js.map",
+    "main.eee07491.css.map": "/futurama-fan-wiki/static/css/main.eee07491.css.map",
+    "main.1bcc127b.js.map": "/futurama-fan-wiki/static/js/main.1bcc127b.js.map",
     "787.cc59b14a.chunk.js.map": "/futurama-fan-wiki/static/js/787.cc59b14a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35fa71f6.css",
-    "static/js/main.7ccf2083.js"
+    "static/css/main.eee07491.css",
+    "static/js/main.1bcc127b.js"
   ]
 }
