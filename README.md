@@ -7,44 +7,47 @@
 ## Table of Contents
 
 - [Overview](#overview)
+  - [Screenshots](#screenshots)
+  - [Link](#link)
   - [Built With](#built-with)
-  - [Thoughts](#thoughts)
 - [Requirements](#requirements)
+- [Thoughts](#thoughts)
 - [Improvements](#improvements)
 - [Useful Resources](#useful-resources)
 
 ## Overview
 
-[Live Link](https://jdegand.github.io/futurama-fan-wiki)
+### Screenshots
 
-![](futurama-fan-wiki.png)
+![](screenshots/futurama-fan-wiki.png "Previous API homepage")
 
-![](futurama-character-page.png)
+***
+
+![](screenshots/futurama-character-page.png "Previous API detail page")
+
+***
+
+![](screenshots/futurama-fan-wiki-rework-desktop.png "Reworked Desktop Page")
+
+***
+
+![](screenshots/futurama-fan-wiki-rework-mobile.png "Reworked Detail Page")
+
+***
+
+![](screenshots/futurama-fan-wiki-rework-unknowns.png "Missing properties will show as unknown")
+
+***
+
+### Link
+
+[Live Link](https://jdegand.github.io/futurama-fan-wiki/)
 
 ### Built With
 
 - React
 - React Router v6
-
-### Thoughts
-
-- Weird that all keys from the api are uppercased.
-- Sometimes pics don't load
-- No updates since 2020 
-- each character doesn't have an id
-- fetching all characters link is limited to 20? 
-
-- Airtable would be good to use to create own api from another show
-- don't have to create separate api and host on heroku
-
-- Hard to find apis that include pictures 
-- Project structure similar to sfpopos project 
-
-- If you refresh on detail page, won't display - state is not persisted
-- sfpopos project had a duplicated data fetch to display data in detail page
-
-- Added sessionStorage but you have to accept a cookie for it to work
-- sessionStorage logic led to duplicated code - didn't explore all options to clean up
+- [Futurama api](https://sampleapis.com/api-list/futurama)
 
 ## Requirements 
 
@@ -52,11 +55,27 @@
 - [x] Add dynamic pages to the character wiki allowing people to navigate to characters to view more information
 - [ ] Use some of the characteristics of the TV show to make the character wiki look like it belongs in that TV universe with custom styles and animations
 
-### Improvements
+## Thoughts
+
+- [Original Futurama Api](https://github.com/Katedam/futurama-api) has been updated and its' characters endpoint was deleted.   
+- So I replaced that api with another [Futurama api](https://sampleapis.com/api-list/futurama). 
+- The new api has a characters route and its json is similar to the previous api.  
+- First Appearance, Status & VoicedBy properties do not exist on this new api so these properties are replaced by the new api's sayings property. 
+
+- If you refresh on detail page, won't display anything - data is not persisted if cookie is blocked
+- Api response is saved to sessionStorage to prevent another api request
+
+- Added 'object-fit: contain' to the img tag - preserves the original aspect ratio and makes picture look better.  
+- Use dictionary list for the card detail - reduced extra styling required if I were to use headings for propert name and spans/paragraphs for property details.   
+- Added conditional to render 'unknown' if a property is missing a value or null
+- Had to change original mobile design since I redesigned the card detail page 
+- Homepage grid changes depending on screen width
+
+## Improvements
 
 - styling / accessibility
 - eliminate duplicated code
-- futurama api itself
+- update dependencies -> react 18
 
 ## Useful Resources
 
